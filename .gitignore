@@ -1,0 +1,72 @@
+# ---------------------------------------------------------------- secrets
+.env
+.env.*
+!.env.example
+*.pem
+credentials.json
+
+# --------------------------------------------------- Source Material (!)
+# Chris's corpus is third-party material held under a consent arrangement,
+# and audio is large. Neither belongs in a pushable repo. The *derived*
+# artefacts — fence.yaml, persona.md, ledger.yaml, the eval set — are the
+# framework's real output and SHOULD be committed.
+subjects/*/corpus/
+subjects/*/voice/
+subjects/*/**/*.mp3
+subjects/*/**/*.wav
+subjects/*/**/*.m4a
+subjects/*/**/*.flac
+
+# Local index artefacts — rebuildable from the corpus
+*.faiss
+*.sqlite
+*.sqlite3
+.chroma/
+.lancedb/
+data/index/
+
+# ----------------------------------------------------------------- Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# ------------------------------------------------------------------- Node
+node_modules/
+.vite/
+web/dist/
+*.tsbuildinfo
+npm-debug.log*
+pnpm-debug.log*
+
+# ---------------------------------------------------------------- LikeC4
+docs/c4/dist/
+docs/c4/export/
+docs/c4/*.mmd
+
+# ------------------------------------------------------------------ Tools
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Index artefacts and recorded runs. The index is derived from the corpus and
+# the manifest; the runs directory is per-experiment output.
+subjects/*/index/
+runs/
+
+# milvus-lite writes its store to the file URI it is given, and compose mounts
+# its volumes beside this file.
+*.db
+volumes/
+
+# Scope Gate spike request log (contains conversation text)
+gateway/*.jsonl

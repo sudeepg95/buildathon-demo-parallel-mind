@@ -1,0 +1,81 @@
+/* Reset and theme layers kept from the claude.ai export; the slides rely on them. */
+@layer properties {
+  @supports (((-webkit-hyphens:none)) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))) {
+  :root, :host { --cds-message-actions-opacity: 1; --cds-badge-x-wght: 577.8; --cds-sticky-edge-start: 0; --cds-sticky-edge-end: 0; --cds-sticky-edge-active: 0; }
+  *, ::before, ::after, ::backdrop { --tw-translate-x: 0; --tw-translate-y: 0; --tw-translate-z: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-scale-z: 1; --tw-rotate-x: initial; --tw-rotate-y: initial; --tw-rotate-z: initial; --tw-skew-x: initial; --tw-skew-y: initial; --tw-pan-x: initial; --tw-pan-y: initial; --tw-pinch-zoom: initial; --tw-space-y-reverse: 0; --tw-space-x-reverse: 0; --tw-divide-x-reverse: 0; --tw-border-style: solid; --tw-divide-y-reverse: 0; --tw-gradient-position: initial; --tw-gradient-from: #0000; --tw-gradient-via: #0000; --tw-gradient-to: #0000; --tw-gradient-stops: initial; --tw-gradient-via-stops: initial; --tw-gradient-from-position: 0%; --tw-gradient-via-position: 50%; --tw-gradient-to-position: 100%; --tw-leading: initial; --tw-font-weight: initial; --tw-tracking: initial; --tw-ordinal: initial; --tw-slashed-zero: initial; --tw-numeric-figure: initial; --tw-numeric-spacing: initial; --tw-numeric-fraction: initial; --tw-shadow: 0 0 #0000; --tw-shadow-color: initial; --tw-shadow-alpha: 100%; --tw-inset-shadow: 0 0 #0000; --tw-inset-shadow-color: initial; --tw-inset-shadow-alpha: 100%; --tw-ring-color: initial; --tw-ring-shadow: 0 0 #0000; --tw-inset-ring-color: initial; --tw-inset-ring-shadow: 0 0 #0000; --tw-ring-inset: initial; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-offset-shadow: 0 0 #0000; --tw-outline-style: solid; --tw-blur: initial; --tw-brightness: initial; --tw-contrast: initial; --tw-grayscale: initial; --tw-hue-rotate: initial; --tw-invert: initial; --tw-opacity: initial; --tw-saturate: initial; --tw-sepia: initial; --tw-drop-shadow: initial; --tw-drop-shadow-color: initial; --tw-drop-shadow-alpha: 100%; --tw-drop-shadow-size: initial; --tw-backdrop-blur: initial; --tw-backdrop-brightness: initial; --tw-backdrop-contrast: initial; --tw-backdrop-grayscale: initial; --tw-backdrop-hue-rotate: initial; --tw-backdrop-invert: initial; --tw-backdrop-opacity: initial; --tw-backdrop-saturate: initial; --tw-backdrop-sepia: initial; --tw-duration: initial; --tw-ease: initial; --tw-content: ""; --tw-contain-size: initial; --tw-contain-layout: initial; --tw-contain-paint: initial; --tw-contain-style: initial; --cds-outset-x: 0px; --cds-outset-y: 0px; --cds-scroll-fade-size: 28px; --cds-scroll-fade-top: 0px; --cds-scroll-fade-bottom: 0px; --cds-scroll-fade-left: 0px; --cds-scroll-fade-right: 0px; --cds-scroll-fade-top-raw: 0px; --cds-scroll-fade-bottom-raw: 0px; --cds-scroll-fade-left-raw: 0px; --cds-scroll-fade-right-raw: 0px; --cds-scroll-fade-y-active: 0; --cds-scroll-fade-x-active: 0; --cds-scroll-fade-top-on: 1; --cds-scroll-fade-bottom-on: 1; --cds-scroll-fade-left-on: 1; --cds-scroll-fade-right-on: 1; --cds-scroll-fade-strip-raw: 0; --cds-scroll-fade-strip-active: 0; }
+}
+}
+
+@layer theme {
+  :root, :host { --spacing: .25rem; --container-sm: 24rem; --container-md: 28rem; --container-3xl: 48rem; --text-xs: .75rem; --text-xs--line-height: calc(1 / .75); --text-sm: .875rem; --text-sm--line-height: calc(1.25 / .875); --text-base: 1rem; --text-base--line-height: calc(1.5 / 1); --text-3xl: 1.875rem; --text-3xl--line-height: calc(2.25 / 1.875); --tracking-wide: .025em; --leading-tight: 1.25; --leading-snug: 1.375; --leading-relaxed: 1.625; --radius-sm: .25rem; --radius-md: .375rem; --radius-lg: .5rem; --radius-xl: .75rem; --ease-in: cubic-bezier(.4, 0, 1, 1); --ease-in-out: cubic-bezier(.4, 0, .2, 1); --blur-md: 12px; --aspect-video: 16 / 9; --default-transition-duration: .15s; --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1); --default-font-family: var(--cds-font-sans); --default-mono-font-family: var(--cds-font-mono); --color-white: #fff; --z-index-pick: 100; --color-app-accent: var(--t-app-accent); }
+  @media print {
+  .cds-root [data-cds="AccordionHeader"] ~ [role="region"][hidden] { display: block !important; }
+}
+}
+
+@layer base {
+  *, ::after, ::before, ::backdrop { box-sizing: border-box; border: 0px solid; margin: 0px; padding: 0px; }
+  ::file-selector-button { box-sizing: border-box; border: 0px solid; margin: 0px; padding: 0px; }
+  html, :host { text-size-adjust: 100%; tab-size: 4; line-height: 1.5; font-family: var(--default-font-family,ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"); font-feature-settings: var(--default-font-feature-settings,normal); font-variation-settings: var(--default-font-variation-settings,normal); -webkit-tap-highlight-color: transparent; }
+  hr { height: 0px; color: inherit; border-top-width: 1px; }
+  abbr:where([title]) { text-decoration: underline dotted; }
+  h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+  a { color: inherit; text-decoration: inherit; }
+  b, strong { font-weight: bolder; }
+  code, kbd, samp, pre { font-family: var(--default-mono-font-family,ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace); font-feature-settings: var(--default-mono-font-feature-settings,normal); font-variation-settings: var(--default-mono-font-variation-settings,normal); font-size: 1em; }
+  small { font-size: 80%; }
+  sub, sup { vertical-align: baseline; font-size: 75%; line-height: 0; position: relative; }
+  sub { bottom: -0.25em; }
+  sup { top: -0.5em; }
+  table { text-indent: 0px; border-color: inherit; border-collapse: collapse; }
+  progress { vertical-align: baseline; }
+  summary { display: list-item; }
+  ol, ul, menu { list-style: none; }
+  img, svg, video, canvas, audio, iframe, embed, object { vertical-align: middle; display: block; }
+  img, video { max-width: 100%; height: auto; }
+  button, input, select, optgroup, textarea { font: inherit; letter-spacing: inherit; color: inherit; opacity: 1; background-color: rgba(0, 0, 0, 0); border-radius: 0px; }
+  ::file-selector-button { font: inherit; letter-spacing: inherit; color: inherit; opacity: 1; background-color: rgba(0, 0, 0, 0); border-radius: 0px; }
+  :where(select:is([multiple], [size])) optgroup { font-weight: bolder; }
+  :where(select:is([multiple], [size])) optgroup option { padding-inline-start: 20px; }
+  ::file-selector-button { margin-inline-end: 4px; }
+  ::placeholder { opacity: 1; }
+  @supports (not ((-webkit-appearance:-apple-pay-button))) or (contain-intrinsic-size:1px) {
+  ::placeholder { color: currentcolor; }
+  @supports (color:color-mix(in lab, red, red)) {
+  ::placeholder { color: color-mix(currentcolor, transparent); }
+}
+}
+  textarea { resize: vertical; }
+  ::-webkit-search-decoration { appearance: none; }
+  ::-webkit-date-and-time-value { min-height: 1lh; text-align: inherit; }
+  ::-webkit-datetime-edit { display: inline-flex; }
+  ::-webkit-datetime-edit-fields-wrapper { padding: 0px; }
+  ::-webkit-datetime-edit { padding-block: 0px; }
+  ::-webkit-datetime-edit-year-field { padding-block: 0px; }
+  ::-webkit-datetime-edit-month-field { padding-block: 0px; }
+  ::-webkit-datetime-edit-day-field { padding-block: 0px; }
+  ::-webkit-datetime-edit-hour-field { padding-block: 0px; }
+  ::-webkit-datetime-edit-minute-field { padding-block: 0px; }
+  ::-webkit-datetime-edit-second-field { padding-block: 0px; }
+  ::-webkit-datetime-edit-millisecond-field { padding-block: 0px; }
+  ::-webkit-datetime-edit-meridiem-field { padding-block: 0px; }
+  ::-webkit-calendar-picker-indicator { line-height: 1; }
+  button, input:where([type="button"], [type="reset"], [type="submit"]) { appearance: button; }
+  ::file-selector-button { appearance: button; }
+  ::-webkit-inner-spin-button { height: auto; }
+  ::-webkit-outer-spin-button { height: auto; }
+  [hidden]:where(:not([hidden="until-found"])) { display: none !important; }
+  :where(.bg-surface-0) { --cds-scroll-fade-strip-color: var(--cds-surface-0); }
+  :where(.bg-surface-1) { --cds-scroll-fade-strip-color: var(--cds-surface-1); }
+  :where(.bg-surface-2) { --cds-scroll-fade-strip-color: var(--cds-surface-2); }
+  :where(.bg-surface-3) { --cds-scroll-fade-strip-color: var(--cds-surface-3); }
+  :where(.bg-surface-panel) { --cds-scroll-fade-strip-color: var(--cds-surface-panel); }
+  :where(.bg-surface-popover) { --cds-scroll-fade-strip-color: var(--cds-surface-popover); }
+  :where([data-cds="Card"]) { --cds-scroll-fade-strip-color: var(--cds-surface-1); }
+  html:where(.cds-root), html:where(.cds-root)::before, html:where(.cds-root)::after, html:where(.cds-root) *, html:where(.cds-root) ::before, html:where(.cds-root) ::after, html :where(.cds-root), html :where(.cds-root)::before, html :where(.cds-root)::after, html :where(.cds-root) *, html :where(.cds-root) ::before, html :where(.cds-root) ::after { border-color: var(--cds-border); }
+  :where(.cds-root) :where(button, [role="button"], [role="tab"], [role="menuitem"], [role="menuitemcheckbox"], [role="menuitemradio"], [role="option"], [role="switch"], [role="checkbox"], [role="radio"]) { cursor: var(--cds-cursor-interactive); }
+  :where(.cds-root) :where(button, [role]):where(:disabled, [aria-disabled="true"], [data-disabled]) { cursor: default; }
+  :where(.cds-root) th { --cds-font-axis-wght: initial; font-variation-settings: var(--font-opsz-axis,) var(--cds-font-axis-wght,) "GRAD" var(--cds-font-grad,0); }
+  :where(.cds-root) th:where(:is(.font-normal, .font-medium, .font-semibold, .font-bold, .text-caption-regular, .text-caption-medium, .text-caption-semibold, .text-caption-bold) th), :where(.cds-root) th:where(:is(.text-footnote-regular, .text-footnote-medium, .text-footnote-semibold, .text-footnote-bold, .text-code-regular, .text-code-medium, .text-code-semibold, .text-code-bold) th), :where(.cds-root) th:where(:is(.text-body-regular, .text-body-medium, .text-body-semibold, .text-body-bold, .text-prose-regular, .text-prose-medium, .text-prose-semibold, .text-prose-bold) th), :where(.cds-root) th:where(:is(.text-heading-regular, .text-heading-medium, .text-heading-semibold, .text-heading-bold, .text-title-regular, .text-title-medium, .text-title-semibold, .text-title-bold) th) { --cds-font-axis-wght: inherit; font-variation-settings: inherit; }
+  :where(.cds-root) :where(text[font-weight], tspan[font-weight]), :where(.cds-root) [style*="font-weight"]:where(:not([style*="font-weight: 400"], [style*="font-weight:400"], [style*="font-weight: normal"], [style*="font-weight:normal"])) { --cds-font-axis-wght: initial; font-variation-settings: var(--font-opsz-axis,) var(--cds-font-axis-wght,) "GRAD" var(--cds-font-grad,0); }
+}
