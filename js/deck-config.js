@@ -149,6 +149,18 @@ window.DECK_MOTION = {
         }
       ],
       "embeds": []
+    },
+    {
+      "transition": "fade",
+      "bg": "#0b0b0c",
+      "steps": [
+        {
+          "hidden": [],
+          "events": [],
+          "auto": false
+        }
+      ],
+      "embeds": []
     }
   ]
 };

@@ -191,6 +191,10 @@
       rise(kids(inner(s, "p50b4b1b02e67r1-7355433f")), { delay: 800, stagger: 150 });
       rise([inner(s, "p50b4b1b02e67r2-7355433f")], { delay: 1500 });
       fadeIn(inner(s, "1f98ffaa"), 1700);
+    },
+    insights: function (s) {
+      rise(kids(inner(s, "insights-head")));
+      rise(kids(inner(s, "insights-images")), { delay: 300, stagger: 200 });
     }
   };
 
