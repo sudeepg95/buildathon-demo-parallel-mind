@@ -4,12 +4,12 @@
 
 #motion-notes { position: fixed; left: 0; right: 0; bottom: 0; max-height: 34vh; overflow: auto; z-index: 51;
   background: rgba(0, 0, 0, .85); border-top: 1px solid #262626; padding: 2vh 4vw; display: none;
-  font: 300 2vh/1.5 Inter, system-ui, sans-serif; color: #cfcfcf; backdrop-filter: blur(6px) }
+  font: 300 2vh/1.5 Lexend, system-ui, sans-serif; color: #cfcfcf; backdrop-filter: blur(6px) }
 #motion-notes.on { display: block }
 
 /* slide 2: the "ingesting" lines over the clip */
 .hook-stream { position: absolute; left: 128px; bottom: 400px; width: 1000px;
-  font: 400 24px/1.8 'JetBrains Mono', ui-monospace, monospace; color: rgba(230, 230, 232, .9);
+  font: 400 24px/1.8 Lexend, ui-sans-serif, system-ui, sans-serif; color: rgba(230, 230, 232, .9);
   text-shadow: 0 2px 12px rgba(0, 0, 0, .95) }
 
 /* slide 6: live waveform, sized to match assets/svg/waveform.svg */
@@ -19,5 +19,5 @@
 /* slide 1: shown only when the browser blocks audible autoplay */
 .intro-gate { position: absolute; inset: 0; display: flex; align-items: flex-end; justify-content: center;
   padding-bottom: 96px; background: linear-gradient(transparent 60%, rgba(0, 0, 0, .7));
-  font: 400 28px/1.4 'JetBrains Mono', ui-monospace, monospace; letter-spacing: 4px; color: #f5f5f2 }
+  font: 400 28px/1.4 Lexend, ui-sans-serif, system-ui, sans-serif; letter-spacing: 4px; color: #f5f5f2 }
 .intro-gate[hidden] { display: none }

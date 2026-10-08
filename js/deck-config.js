@@ -140,7 +140,7 @@ window.DECK_MOTION = {
     },
     {
       "transition": "fade",
-      "bg": "#7aa2ff",
+      "bg": "#0b0b0c",
       "steps": [
         {
           "hidden": [],
@@ -152,7 +152,7 @@ window.DECK_MOTION = {
     },
     {
       "transition": "fade",
-      "bg": "#0b0b0c",
+      "bg": "#7aa2ff",
       "steps": [
         {
           "hidden": [],
